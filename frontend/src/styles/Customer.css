@@ -1,0 +1,402 @@
+
+/* =========================
+   Customer Page
+========================= */
+
+.customer-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.customer-container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 36px 7.2%;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Page Heading
+========================= */
+
+.customer-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.customer-page-heading h1 {
+  margin: 0 0 10px;
+  color: #172033;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.customer-page-heading p {
+  margin: 0;
+  color: #687386;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.customer-count {
+  padding: 11px 16px;
+  border: 1px solid #dbe7ff;
+  border-radius: 9px;
+  background: #e8efff;
+  color: #1d4ed8;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* =========================
+   Search Filters Card
+========================= */
+
+.customer-search-container {
+  margin-bottom: 26px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e0e6ef;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+}
+
+.customer-search-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 24px;
+}
+
+.customer-search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.customer-search-field label {
+  color: #253247;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.customer-search-field input  {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #cfd6e1;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.customer-search-field select  {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #cfd6e1;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.customer-search-field input::placeholder {
+  color: #929baa;
+}
+
+.customer-search-field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Clear Filters Button */
+
+.customer-search-clear {
+  display: block;
+  margin-top: 24px;
+  margin-left: auto;
+  padding: 11px 18px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.customer-search-clear:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================
+   Results Text
+========================= */
+
+.customer-search-results {
+  margin: 0 0 14px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* =========================
+   Customer Table
+========================= */
+
+.customer-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e0e6ef;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+}
+
+.customer-table {
+  width: 100%;
+  min-width: 1150px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e8edf4;
+  color: #374151;
+  font-size: 14px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.customer-table th {
+  background: #f0f4f9;
+  color: #253247;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.customer-table tbody tr {
+  background: #ffffff;
+  transition: background 0.2s;
+}
+
+.customer-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.customer-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================
+   Edit Inputs
+========================= */
+
+.customer-edit-input {
+  width: 100%;
+  min-width: 120px;
+  height: 38px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #cfd6e1;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font-size: 13px;
+}
+
+.customer-edit-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   Transaction Status Select
+========================= */
+
+.customer-status-select {
+  min-width: 115px;
+  height: 36px;
+  padding: 0 9px;
+  border: 1px solid #cfd6e1;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.customer-status-select:focus {
+  border-color: #2563eb;
+}
+
+.customer-status-select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.edit-btn,
+.delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  margin: 2px;
+  padding: 8px 13px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.edit-btn {
+  background: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+.delete-btn {
+  background: #e33446;
+}
+
+.delete-btn:hover {
+  background: #c81e35;
+}
+
+.edit-btn:disabled,
+.delete-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Messages and Errors
+========================= */
+
+.customer-message {
+  margin: 20px 0;
+  padding: 28px 20px;
+  border: 1px solid #e0e6ef;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #64748b;
+  text-align: center;
+  font-size: 15px;
+}
+
+.customer-error {
+  margin: 16px 0;
+  padding: 14px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 14px;
+}
+
+/* =========================
+   Responsive Layout
+========================= */
+
+@media (max-width: 1000px) {
+  .customer-container {
+    padding: 30px 24px;
+  }
+
+  .customer-search-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .customer-page-heading h1 {
+    font-size: 28px;
+  }
+
+  .customer-search-container {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .customer-container {
+    padding: 22px 12px;
+  }
+
+  .customer-page-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .customer-page-heading h1 {
+    font-size: 24px;
+  }
+
+  .customer-page-heading p {
+    font-size: 14px;
+  }
+
+  .customer-count {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .customer-search-container {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+
+  .customer-search-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+
+  .customer-search-field label {
+    font-size: 14px;
+  }
+
+  .customer-search-field input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .customer-search-clear {
+    width: 100%;
+  }
+
+  .customer-table th,
+  .customer-table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,9 @@
+
+Django>=5.2,<5.3
+djangorestframework
+django-cors-headers
+psycopg[binary]
+python-dotenv
+gunicorn
+django-cors-headers
+djangorestframework-simplejwt
