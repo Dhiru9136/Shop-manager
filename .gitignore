@@ -21,3 +21,5 @@ media/
 .DS_Store
 Thumbs.db
 .vscode/
+frontend/.env.development
+.env
